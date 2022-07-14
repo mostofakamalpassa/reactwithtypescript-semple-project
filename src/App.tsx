@@ -2,8 +2,10 @@ import React from 'react';
 
 import './App.css';
 import { Greet } from './components/Greet';
+import { MyStatus } from './components/MyStatus';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+
 
 function App() {
   const personName = {
@@ -35,6 +37,7 @@ function App() {
         <Greet name="kamal passa" isLogdIn={true}></Greet>
         <Person name={personName}></Person>
         <PersonList nameList = {nameList}></PersonList>
+        <MyStatus status='loading'></MyStatus>
       </header>
     </div>
   );
