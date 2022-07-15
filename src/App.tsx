@@ -55,7 +55,7 @@ function App() {
 
        <Buttons handleClick={(event, id) =>{ console.log("Button event click", event, id)}}></Buttons>
 
-        <Inputs value='' handleChange={ev => console.log(ev)}></Inputs>
+        <Inputs value='' handleChange={ev => ev.target.value}></Inputs>
 
         <Container style={{backgroundColor:'red', fontSize:'30px'}}></Container>
       </header>

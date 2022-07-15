@@ -1,8 +1,12 @@
 import React from "react";
-type PropNameList = {
+import { Name } from "./Person.types";
+/* type PropNameList = {
     nameList:{ first:string; last:string}[]
-}
+} */
 
+type PropNameList = {
+    nameList:Name[]
+}
 /* type PropNameList = {
     nameList:[{ first:string; last:string}]
 } give error  */
