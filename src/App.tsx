@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './App.css';
+import { Buttons } from './components/Buttons';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { MyStatus } from './components/MyStatus';
@@ -49,6 +50,8 @@ function App() {
               <h2>Children Property under Heading Methods</h2>
           </Heading>
        </Oscar>
+
+       <Buttons handleClick={(event, id) =>{ console.log("Button event click", event, id)}}></Buttons>
 
       </header>
     </div>
