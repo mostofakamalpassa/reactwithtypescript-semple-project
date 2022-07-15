@@ -2,8 +2,10 @@ import React from 'react';
 
 import './App.css';
 import { Buttons } from './components/Buttons';
+import { Container } from './components/Container';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
+import { Inputs } from './components/Inputs';
 import { MyStatus } from './components/MyStatus';
 import { Oscar } from './components/OScar';
 import { Person } from './components/Person';
@@ -53,6 +55,9 @@ function App() {
 
        <Buttons handleClick={(event, id) =>{ console.log("Button event click", event, id)}}></Buttons>
 
+        <Inputs value='' handleChange={ev => console.log(ev)}></Inputs>
+
+        <Container style={{backgroundColor:'red', fontSize:'30px'}}></Container>
       </header>
     </div>
   );
