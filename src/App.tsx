@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.css';
 import { Greet } from './components/Greet';
+import { Heading } from './components/Heading';
 import { MyStatus } from './components/MyStatus';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
@@ -34,10 +35,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Greet name="kamal passa" isLogdIn={true}></Greet>
+        {/* <Greet name="kamal passa" isLogdIn={true}></Greet>
         <Person name={personName}></Person>
         <PersonList nameList = {nameList}></PersonList>
-        <MyStatus status='loading'></MyStatus>
+        <MyStatus status='loading'></MyStatus> */}
+        <Heading>
+          <p>Hello Bangladesh</p>
+        </Heading>
+        
+       
+
       </header>
     </div>
   );
