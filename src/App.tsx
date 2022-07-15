@@ -4,6 +4,7 @@ import './App.css';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { MyStatus } from './components/MyStatus';
+import { Oscar } from './components/OScar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 
@@ -43,7 +44,11 @@ function App() {
           <p>Hello Bangladesh</p>
         </Heading>
         
-       
+       <Oscar>
+          <Heading>
+              <h2>Children Property under Heading Methods</h2>
+          </Heading>
+       </Oscar>
 
       </header>
     </div>
