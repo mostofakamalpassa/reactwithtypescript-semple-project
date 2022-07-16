@@ -10,6 +10,7 @@ import { MyStatus } from './components/MyStatus';
 import { Oscar } from './components/OScar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+import { LoggedIn } from './components/states/LoggedIn';
 
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
         <Person name={personName}></Person>
         <PersonList nameList = {nameList}></PersonList>
         <MyStatus status='loading'></MyStatus> */}
-        <Heading>
+        {/* <Heading>
           <p>Hello Bangladesh</p>
         </Heading>
         
@@ -57,7 +58,9 @@ function App() {
 
         <Inputs value='' handleChange={ev => ev.target.value}></Inputs>
 
-        <Container style={{backgroundColor:'red', fontSize:'30px'}}></Container>
+        <Container style={{backgroundColor:'red', fontSize:'30px'}}></Container> */}
+
+        <LoggedIn></LoggedIn>
       </header>
     </div>
   );
