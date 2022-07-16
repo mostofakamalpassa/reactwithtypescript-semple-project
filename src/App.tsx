@@ -10,6 +10,7 @@ import { MyStatus } from './components/MyStatus';
 import { Oscar } from './components/OScar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+import { Counter } from './components/states/Counter';
 import { LoggedIn } from './components/states/LoggedIn';
 import { User } from './components/states/User';
 
@@ -62,7 +63,8 @@ function App() {
         <Container style={{backgroundColor:'red', fontSize:'30px'}}></Container> */}
 
         {/* <LoggedIn></LoggedIn> */}
-        <User></User>
+        {/* <User></User> */}
+        <Counter></Counter>
       </header>
     </div>
   );
