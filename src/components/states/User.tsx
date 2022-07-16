@@ -5,7 +5,8 @@ type AuthUser = {
 }
 
 export const User = () =>{
-    const [user, setUser] = useState<null | AuthUser>(null);
+    // const [user, setUser] = useState<null | AuthUser>(null);
+    const [user, setUser] = useState({} as AuthUser); // Type Assertion 
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const handleLogin = () => {
             // setIsLoggedIn(true)
@@ -16,7 +17,8 @@ export const User = () =>{
     }
     const handleLogout = () =>{
         // setIsLoggedIn(false);
-        setUser(null);
+        // setUser(null);
+        setUser({name:'', email:''});
     }
 
     return(
