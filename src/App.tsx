@@ -11,6 +11,7 @@ import { Oscar } from './components/OScar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { LoggedIn } from './components/states/LoggedIn';
+import { User } from './components/states/User';
 
 
 function App() {
@@ -60,7 +61,8 @@ function App() {
 
         <Container style={{backgroundColor:'red', fontSize:'30px'}}></Container> */}
 
-        <LoggedIn></LoggedIn>
+        {/* <LoggedIn></LoggedIn> */}
+        <User></User>
       </header>
     </div>
   );
